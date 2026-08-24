@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Makeovers by Arzoo</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .filters{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px; }
+  .filter-btn{
+    background:none; border:1px solid var(--line); padding:10px 20px;
+    font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft);
+  }
+  .filter-btn.active{ background:var(--wine); border-color:var(--wine); color:var(--ivory); }
+  .gallery-item{ cursor:pointer; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><b>Makeovers</b> <em>by Arzoo</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost on-dark">Enquire</a>
+      <a href="https://wa.me/919996642716" class="btn btn-gold" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="testimonials.html">Testimonials</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <span class="spine">Makeovers by Arzoo — Bridal Makeup — Dubai &amp; Gurgaon</span>
+  <div class="wrap">
+    <span class="eyebrow">Portfolio</span>
+    <h1 class="mt-16">The lookbook.</h1>
+    <p class="lede mt-24">A selection of bridal, engagement and party looks. Swap these tiles for real photography from the Instagram feed.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="bridal">Bridal</button>
+      <button class="filter-btn" data-filter="engagement">Engagement</button>
+      <button class="filter-btn" data-filter="party">Party</button>
+    </div>
+
+    <div class="grid-4" id="gallery">
+      <div class="art-tile square gallery-item" data-cat="bridal" data-label="Bridal look 01"><img src="assets/images/bridal-1.jpg" alt="Bridal look" loading="lazy" onerror="this.remove()"><span class="tag">Bridal</span></div>
+      <div class="art-tile square gallery-item" data-cat="engagement" data-label="Engagement look 01"><img src="assets/images/engagement-1.jpg" alt="Engagement look" loading="lazy" onerror="this.remove()"><span class="tag">Engagement</span></div>
+      <div class="art-tile square gallery-item" data-cat="party" data-label="Party look 01"><img src="assets/images/party-1.jpg" alt="Party look" loading="lazy" onerror="this.remove()"><span class="tag">Party</span></div>
+      <div class="art-tile square gallery-item" data-cat="bridal" data-label="Bridal look 02"><img src="assets/images/bridal-2.jpg" alt="Bridal look" loading="lazy" onerror="this.remove()"><span class="tag">Bridal</span></div>
+      <div class="art-tile square gallery-item" data-cat="party" data-label="Party look 02"><img src="assets/images/party-2.jpg" alt="Party look" loading="lazy" onerror="this.remove()"><span class="tag">Party</span></div>
+      <div class="art-tile square gallery-item" data-cat="engagement" data-label="Engagement look 02"><img src="assets/images/engagement-2.jpg" alt="Engagement look" loading="lazy" onerror="this.remove()"><span class="tag">Engagement</span></div>
+      <div class="art-tile square gallery-item" data-cat="bridal" data-label="Bridal look 03"><img src="assets/images/bridal-3.jpg" alt="Bridal look" loading="lazy" onerror="this.remove()"><span class="tag">Bridal</span></div>
+      <div class="art-tile square gallery-item" data-cat="bridal" data-label="Bridal look 04"><img src="assets/images/bridal-4.jpg" alt="Bridal look" loading="lazy" onerror="this.remove()"><span class="tag">Bridal</span></div>
+      <div class="art-tile square gallery-item" data-cat="party" data-label="Party look 03"><img src="assets/images/party-3.jpg" alt="Party look" loading="lazy" onerror="this.remove()"><span class="tag">Party</span></div>
+      <div class="art-tile square gallery-item" data-cat="engagement" data-label="Engagement look 03"><img src="assets/images/engagement-3.jpg" alt="Engagement look" loading="lazy" onerror="this.remove()"><span class="tag">Engagement</span></div>
+      <div class="art-tile square gallery-item" data-cat="bridal" data-label="Bridal look 05"><img src="assets/images/bridal-5.jpg" alt="Bridal look" loading="lazy" onerror="this.remove()"><span class="tag">Bridal</span></div>
+      <div class="art-tile square gallery-item" data-cat="party" data-label="Party look 04"><img src="assets/images/party-4.jpg" alt="Party look" loading="lazy" onerror="this.remove()"><span class="tag">Party</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="on-wine section-tight">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow on-dark">Like What You See?</span>
+    <h2 class="mt-16">Let's plan your look</h2>
+    <div class="btn-row" style="display:flex; gap:16px; justify-content:center; margin-top:28px; flex-wrap:wrap;">
+      <a href="https://wa.me/919996642716" class="btn btn-wa" target="_blank" rel="noopener">Message on WhatsApp</a>
+      <a href="contact.html" class="btn btn-ghost on-dark">Enquiry Form</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Makeovers by Arzoo</h4>
+        <p>Bridal &amp; HD makeup artistry across Delhi NCR — studio sittings and on‑location for weddings and events.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="about.html" style="display:block;">About</a>
+        <a href="services.html" style="display:block;">Services</a>
+        <a href="portfolio.html" style="display:block;">Portfolio</a>
+        <a href="testimonials.html" style="display:block;">Testimonials</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://wa.me/919996642716" style="display:block;">WhatsApp</a>
+        <a href="https://www.instagram.com/makeoversbyarzoo" style="display:block;" target="_blank" rel="noopener">Instagram</a>
+        <p>Gurgaon, India &amp; Dubai, UAE</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>By appointment only</p>
+        <p>Wedding season bookings open year‑round</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Makeovers by Arzoo. All rights reserved.</span>
+      <span>Design demo by Etihaz Digital</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox">
+  <button class="close-btn" aria-label="Close">&times;</button>
+  <div class="box art-tile" style="aspect-ratio:4/5;">
+    <span class="tag">Look preview</span>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

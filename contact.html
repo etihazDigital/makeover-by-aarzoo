@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Makeovers by Arzoo</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .field{ margin-bottom: 22px; }
+  .field label{ display:block; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:8px; }
+  .field input, .field select, .field textarea{
+    width:100%; border:1px solid var(--line); background:var(--card); padding:14px 16px;
+    font-family: var(--body); font-size:15px; color:var(--ink);
+  }
+  .field textarea{ resize:vertical; min-height:120px; }
+  #form-note{ display:none; margin-top:16px; padding:14px 16px; background:var(--ivory-2); border-left:3px solid var(--gold); font-size:14px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><b>Makeovers</b> <em>by Arzoo</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost on-dark">Enquire</a>
+      <a href="https://wa.me/919996642716" class="btn btn-gold" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="testimonials.html">Testimonials</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <span class="spine">Makeovers by Arzoo — Bridal Makeup — Dubai &amp; Gurgaon</span>
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1 class="mt-16">Let's plan your day.</h1>
+    <p class="lede mt-24">Send a few details below, or message directly on WhatsApp for the fastest reply.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap grid-2" style="align-items:start;">
+    <div>
+      <span class="eyebrow">Enquiry Form</span>
+      <h2 class="mt-16">Tell us about the day</h2>
+      <form id="contact-form" class="mt-24">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="date">Function date</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div class="field">
+          <label for="function">Function type</label>
+          <select id="function" name="function">
+            <option>Bridal — Wedding Day</option>
+            <option>Engagement</option>
+            <option>Sangeet / Mehendi</option>
+            <option>Party / Guest Makeup</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="location">Venue / location</label>
+          <input type="text" id="location" name="location" placeholder="City or venue name">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about the look you have in mind..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        <p id="form-note"></p>
+      </form>
+    </div>
+
+    <div>
+      <div class="card" style="margin-bottom:24px;">
+        <span class="eyebrow">Fastest Reply</span>
+        <h3 class="mt-16">WhatsApp</h3>
+        <p class="mt-8" style="font-size:14.5px;">Most brides reach out here first — send a few reference photos and your date.</p>
+        <a href="https://wa.me/919996642716" class="btn btn-wa mt-16" target="_blank" rel="noopener" style="display:inline-flex;">Message on WhatsApp</a>
+      </div>
+      <div class="card" style="margin-bottom:24px;">
+        <span class="eyebrow">Location</span>
+        <h3 class="mt-16">Dubai &amp; Gurgaon</h3>
+        <p class="mt-8" style="font-size:14.5px;">Based between Dubai and Gurgaon, with bookings for destination weddings and shoots worldwide.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">Follow Along</span>
+        <h3 class="mt-16">Instagram</h3>
+        <p class="mt-8" style="font-size:14.5px;">Recent work and behind‑the‑scenes from real bridal shoots.</p>
+        <a href="https://www.instagram.com/makeoversbyarzoo" class="btn btn-ghost mt-16" target="_blank" rel="noopener" style="display:inline-flex;">@makeoversbyarzoo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Makeovers by Arzoo</h4>
+        <p>Bridal &amp; HD makeup artistry across Delhi NCR — studio sittings and on‑location for weddings and events.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="about.html" style="display:block;">About</a>
+        <a href="services.html" style="display:block;">Services</a>
+        <a href="portfolio.html" style="display:block;">Portfolio</a>
+        <a href="testimonials.html" style="display:block;">Testimonials</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://wa.me/919996642716" style="display:block;">WhatsApp</a>
+        <a href="https://www.instagram.com/makeoversbyarzoo" style="display:block;" target="_blank" rel="noopener">Instagram</a>
+        <p>Gurgaon, India &amp; Dubai, UAE</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>By appointment only</p>
+        <p>Wedding season bookings open year‑round</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Makeovers by Arzoo. All rights reserved.</span>
+      <span>Design demo by Etihaz Digital</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

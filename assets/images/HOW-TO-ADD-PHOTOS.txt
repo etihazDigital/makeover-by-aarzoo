@@ -1,0 +1,27 @@
+HOW TO ADD REAL PHOTOS TO THIS SITE
+====================================
+
+The site already looks for photos in this folder. Nothing to edit in the
+code — just save images here with these EXACT filenames, and they'll show
+up automatically on the site. Any file that isn't here yet just shows the
+pastel placeholder pattern instead of breaking.
+
+Recommended: square-ish photos, at least 1000x1000px, .jpg format,
+under 500KB each (compress at squoosh.app if needed for fast loading).
+
+FILES USED ON MULTIPLE PAGES (portfolio.html + reused on index.html):
+  bridal-1.jpg        bridal-2.jpg       bridal-3.jpg
+  bridal-4.jpg        bridal-5.jpg
+  engagement-1.jpg     engagement-2.jpg   engagement-3.jpg
+  party-1.jpg          party-2.jpg        party-3.jpg        party-4.jpg
+
+FILES USED ONCE:
+  hero-portrait.jpg    → the large photo on the homepage hero (index.html)
+                          Portrait/vertical orientation works best here.
+  about-portrait.jpg   → the photo on the About page (about.html)
+                          Portrait/vertical orientation works best here.
+
+That's it — 13 files total gets every placeholder on the site replaced
+with real photography. You can start with just a few (e.g. bridal-1.jpg,
+hero-portrait.jpg, about-portrait.jpg) and add the rest later; anything
+missing just falls back to the pattern, nothing looks broken.
